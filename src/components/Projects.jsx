@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
+import lipLogo from "../assets/lip_logo.png";
+import ashaLogo from "../assets/asa.png";
 
 const projects = [
   {
     title: "LipDecoder",
     description:
       "Developed a deep learning-based lip reading system that converts silent video into meaningful text using computer vision techniques.",
-    image: "/src/assets/lip_logo.png",
+    image: "lipLogo",
     tags: ["Deep Learning", "Python", "Computer Vision", "NLP"],
     github: "https://github.com/Priya-vl/LipDecoder",
   },
@@ -13,7 +15,7 @@ const projects = [
     title: "Asha – AI Chatbot",
     description:
       "ASHA AI is an intelligent chatbot designed to support women in career growth. Built for the ASHA AI Hackathon 2024 with AI-driven insights and interactive conversations.",
-    image: "/src/assets/asa.png",
+    image: "ashaLogo",
     tags: ["NLP", "RAG", "Core AI Engine", "Python", "Streamlit", "API Integration"],
     github: "https://github.com/Priya-vl/Asha-AI",
   },
@@ -63,3 +65,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
