@@ -7,15 +7,15 @@ const projects = [
     title: "LipDecoder",
     description:
       "Developed a deep learning-based lip reading system that converts silent video into meaningful text using computer vision techniques.",
-    image: "lipLogo",
+    image: lipLogo, // ✅ FIXED
     tags: ["Deep Learning", "Python", "Computer Vision", "NLP"],
-    github: "https://github.com/Priya-vl/LipDecoder",
+    github: "https://github.com/Priya-vl/LIP_DECODER-",
   },
   {
     title: "Asha – AI Chatbot",
     description:
       "ASHA AI is an intelligent chatbot designed to support women in career growth. Built for the ASHA AI Hackathon 2024 with AI-driven insights and interactive conversations.",
-    image: "ashaLogo",
+    image: ashaLogo, // ✅ FIXED
     tags: ["NLP", "RAG", "Core AI Engine", "Python", "Streamlit", "API Integration"],
     github: "https://github.com/Priya-vl/Asha-AI",
   },
@@ -42,7 +42,10 @@ const Projects = () => {
               className="project-card glass-card"
               whileHover={{ y: -8 }}
             >
-              <img src={project.image} alt={project.title} />
+              {/* ✅ IMAGE FIX */}
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
+              </div>
 
               <h3>{project.title}</h3>
               <p>{project.description}</p>
@@ -65,4 +68,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
